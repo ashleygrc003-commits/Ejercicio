@@ -8,7 +8,7 @@ public class Issue1{
 
 class Empleado{
     public String nombre;
-    public int salario;
+    private int salario;
 
     Empleado(String nombre, int salario){
         this.nombre = nombre;
@@ -19,7 +19,7 @@ class Empleado{
         return this.salario;
     }
 
-    public int  calcularSalario(){
+    public int calcularSalario(){
         int salarioAnual = this.salario * 12;
         return salarioAnual;
     }
